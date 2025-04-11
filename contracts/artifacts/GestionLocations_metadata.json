@@ -1,0 +1,177 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					}
+				],
+				"name": "ContratCloture",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "montant",
+						"type": "uint256"
+					}
+				],
+				"name": "ContratCree",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "montant",
+						"type": "uint256"
+					}
+				],
+				"name": "LoyerPaye",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "montant",
+						"type": "uint256"
+					}
+				],
+				"name": "ajouterContrat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "locataire",
+						"type": "address"
+					}
+				],
+				"name": "cloturerMonContrat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "contrats",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "montantLoyer",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum GestionLocations.EtatContrat",
+						"name": "etat",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payerLoyer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proprietaire",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/8_GestionLocation.sol": "GestionLocations"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/8_GestionLocation.sol": {
+			"keccak256": "0x2703652a25adbdffc59437a66161ee8a591b9dbce72d654c88f997ae177da81b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://af6b84e0098dd9fc2ec46d0c29043baeaef61ad57b90ca5b0f113a418742a991",
+				"dweb:/ipfs/QmbetQCPqhaXAdo7GMkXd69EK3i1GxqqpNNjMCSBtjSGAW"
+			]
+		}
+	},
+	"version": 1
+}
